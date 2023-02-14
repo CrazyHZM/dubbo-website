@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – Dubbo SPI扩展实现说明</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/</link><description>Recent content in Dubbo SPI扩展实现说明 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 协议扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/protocol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/protocol/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – Dubbo SPI 扩展实现说明</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/</link><description>Recent content in Dubbo SPI 扩展实现说明 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 协议扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/protocol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/protocol/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>RPC 协议扩展，封装远程调用细节。&lt;/p>
 &lt;p>契约：&lt;/p>
@@ -120,7 +120,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.Protocol：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxProtocol
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxProtocol&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 调用拦截扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/filter/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>服务提供方和服务消费方调用过程拦截，Dubbo 本身的大多功能均基于此扩展点实现，每次远程方法执行，该拦截都会被执行，请注意对性能的影响。&lt;/p>
@@ -188,7 +188,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.Filter：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxFilter
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxFilter&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 引用监听扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/invoker-listener/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/invoker-listener/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>当有服务引用时，触发该事件。&lt;/p>
@@ -229,7 +229,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.InvokerListener：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxInvokerListener
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxInvokerListener&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 暴露监听扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/exporter-listener/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/exporter-listener/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>当有服务暴露时，触发该事件。&lt;/p>
@@ -271,7 +271,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.ExporterListener：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxExporterListener
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxExporterListener&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 集群扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/cluster/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>当有多个服务提供方时，将多个服务提供方组织成一个集群，并伪装成一个提供方。&lt;/p>
@@ -328,7 +328,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.cluster.Cluster：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxCluster
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxCluster&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 路由扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/router/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/router/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>从多个服务提供方中选择一个进行调用。&lt;/p>
@@ -374,7 +374,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.cluster.RouterFactory：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxRouterFactory
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxRouterFactory&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 负载均衡扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/load-balance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/load-balance/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>从多个服务提供方中选择一个进行调用&lt;/p>
@@ -418,7 +418,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.cluster.LoadBalance：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxLoadBalance
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxLoadBalance&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 合并结果扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/merger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/merger/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>合并返回结果，用于分组聚合。&lt;/p>
@@ -464,7 +464,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.cluster.Merger：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxMerger
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxMerger&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 注册中心扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/registry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/registry/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>负责服务的注册与发现。&lt;/p>
@@ -631,7 +631,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.registry.RegistryFactory：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxRegistryFactory
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxRegistryFactory&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 监控中心扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/monitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/monitor/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>负责服务调用次和调用时间的监控。&lt;/p>
@@ -681,7 +681,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.monitor.MonitorFactory：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxMonitorFactory
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxMonitorFactory&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 扩展点加载扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/extension-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/extension-factory/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>扩展点本身的加载容器，可从不同容器加载扩展点。&lt;/p>
@@ -717,7 +717,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.common.extension.ExtensionFactory：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxExtensionFactory
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxExtensionFactory&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: Liveness 存活探针</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/liveness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/liveness/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>拓展应用存活的检测点。&lt;/p>
@@ -793,7 +793,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.rpc.ProxyFactory：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxProxyFactory
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxProxyFactory&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: Readiness 就绪探针</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/readiness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/readiness/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>拓展应用就绪的检测点。&lt;/p>
@@ -898,7 +898,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.common.compiler.Compiler：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxCompiler
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxCompiler&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 配置中心扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/config-center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/config-center/</guid><description>
 &lt;h2 id="设计目的">设计目的&lt;/h2>
 &lt;p>配置中心的核心功能是作为 Key-Value 存储，Dubbo 框架告知配置中心其关心的 key，配置中心返回该key对应的 value 值。&lt;/p>
@@ -984,7 +984,66 @@
 &lt;li>服务治理规则：org.apache.dubbo.demo.DemoService:1.0.0:group1.configurators&lt;/li>
 &lt;/ul>
 &lt;h3 id="apollo">Apollo&lt;/h3>
-&lt;p>Apollo 与 Nacos 类似，请参考动态配置中心使用文档中关于 Apollo 部分的描述。&lt;/p></description></item><item><title>Docs3-V2: 消息派发扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/dispatcher/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/dispatcher/</guid><description>
+&lt;p>Apollo 与 Nacos 类似，请参考动态配置中心使用文档中关于 Apollo 部分的描述。&lt;/p></description></item><item><title>Docs3-V2: 元数据中心扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/metadata-report/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/metadata-report/</guid><description>
+&lt;h2 id="设计目的">设计目的&lt;/h2>
+&lt;p>请参见 &lt;a href="../../../metadata-center/overview/">元数据中心手册&lt;/a>&lt;/p>
+&lt;h2 id="扩展接口">扩展接口&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>org.apache.dubbo.metadata.store.MetadataReportFactory&lt;/code>&lt;/li>
+&lt;li>&lt;code>org.apache.dubbo.metadata.store.MetadataReport&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="已知扩展">已知扩展&lt;/h2>
+&lt;h2 id="实现原理">实现原理&lt;/h2>
+&lt;h3 id="spi定义">SPI定义&lt;/h3>
+&lt;p>参考：org.apache.dubbo.metadata.store.MetadataReportFactory，org.apache.dubbo.metadata.store.MetadataReport&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">@SPI&lt;/span>&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;redis&amp;#34;&lt;/span>&lt;span style="color:#719e07">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">interface&lt;/span> &lt;span style="color:#268bd2">MetadataReportFactory&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">@Adaptive&lt;/span>&lt;span style="color:#719e07">({&lt;/span>&lt;span style="color:#2aa198">&amp;#34;protocol&amp;#34;&lt;/span>&lt;span style="color:#719e07">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> MetadataReport &lt;span style="color:#268bd2">getMetadataReport&lt;/span>&lt;span style="color:#719e07">(&lt;/span>URL url&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="自定义元数据的存储">自定义元数据的存储&lt;/h3>
+&lt;p>下面以Redis存储为例进行说明。&lt;/p>
+&lt;p>新建一个project，需要支持以下修改：&lt;/p>
+&lt;h4 id="扩展abstractmetadatareport">扩展AbstractMetadataReport&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">class&lt;/span> &lt;span style="color:#268bd2">RedisMetadataReport&lt;/span> &lt;span style="color:#268bd2">extends&lt;/span> AbstractMetadataReport &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">private&lt;/span> &lt;span style="color:#268bd2">final&lt;/span> &lt;span style="color:#268bd2">static&lt;/span> Logger logger &lt;span style="color:#719e07">=&lt;/span> LoggerFactory&lt;span style="color:#719e07">.&lt;/span>getLogger&lt;span style="color:#719e07">(&lt;/span>RedisMetadataReport&lt;span style="color:#719e07">.&lt;/span>class&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">final&lt;/span> JedisPool pool&lt;span style="color:#719e07">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">RedisMetadataReport&lt;/span>&lt;span style="color:#719e07">(&lt;/span>URL url&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">super&lt;/span>&lt;span style="color:#719e07">(&lt;/span>url&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pool &lt;span style="color:#719e07">=&lt;/span> &lt;span style="color:#719e07">new&lt;/span> JedisPool&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#719e07">new&lt;/span> JedisPoolConfig&lt;span style="color:#719e07">(),&lt;/span> url&lt;span style="color:#719e07">.&lt;/span>getHost&lt;span style="color:#719e07">(),&lt;/span> url&lt;span style="color:#719e07">.&lt;/span>getPort&lt;span style="color:#719e07">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">@Override&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">protected&lt;/span> &lt;span style="color:#dc322f">void&lt;/span> &lt;span style="color:#268bd2">doStoreProviderMetadata&lt;/span>&lt;span style="color:#719e07">(&lt;/span>ProviderMetadataIdentifier providerMetadataIdentifier&lt;span style="color:#719e07">,&lt;/span> String serviceDefinitions&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">this&lt;/span>&lt;span style="color:#719e07">.&lt;/span>storeMetadata&lt;span style="color:#719e07">(&lt;/span>providerMetadataIdentifier&lt;span style="color:#719e07">,&lt;/span> serviceDefinitions&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">@Override&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">protected&lt;/span> &lt;span style="color:#dc322f">void&lt;/span> &lt;span style="color:#268bd2">doStoreConsumerMetadata&lt;/span>&lt;span style="color:#719e07">(&lt;/span>ConsumerMetadataIdentifier consumerMetadataIdentifier&lt;span style="color:#719e07">,&lt;/span> String value&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">this&lt;/span>&lt;span style="color:#719e07">.&lt;/span>storeMetadata&lt;span style="color:#719e07">(&lt;/span>consumerMetadataIdentifier&lt;span style="color:#719e07">,&lt;/span> value&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">private&lt;/span> &lt;span style="color:#dc322f">void&lt;/span> &lt;span style="color:#268bd2">storeMetadata&lt;/span>&lt;span style="color:#719e07">(&lt;/span>MetadataIdentifier metadataIdentifier&lt;span style="color:#719e07">,&lt;/span> String v&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">try&lt;/span> &lt;span style="color:#719e07">(&lt;/span>Jedis jedis &lt;span style="color:#719e07">=&lt;/span> pool&lt;span style="color:#719e07">.&lt;/span>getResource&lt;span style="color:#719e07">())&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> jedis&lt;span style="color:#719e07">.&lt;/span>set&lt;span style="color:#719e07">(&lt;/span>metadataIdentifier&lt;span style="color:#719e07">.&lt;/span>getIdentifierKey&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">+&lt;/span> META_DATA_SOTRE_TAG&lt;span style="color:#719e07">,&lt;/span> v&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span> &lt;span style="color:#719e07">catch&lt;/span> &lt;span style="color:#719e07">(&lt;/span>Throwable e&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> logger&lt;span style="color:#719e07">.&lt;/span>error&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;Failed to put &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> metadataIdentifier &lt;span style="color:#719e07">+&lt;/span> &lt;span style="color:#2aa198">&amp;#34; to redis &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> v &lt;span style="color:#719e07">+&lt;/span> &lt;span style="color:#2aa198">&amp;#34;, cause: &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> e&lt;span style="color:#719e07">.&lt;/span>getMessage&lt;span style="color:#719e07">(),&lt;/span> e&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">throw&lt;/span> &lt;span style="color:#719e07">new&lt;/span> RpcException&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;Failed to put &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> metadataIdentifier &lt;span style="color:#719e07">+&lt;/span> &lt;span style="color:#2aa198">&amp;#34; to redis &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> v &lt;span style="color:#719e07">+&lt;/span> &lt;span style="color:#2aa198">&amp;#34;, cause: &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> e&lt;span style="color:#719e07">.&lt;/span>getMessage&lt;span style="color:#719e07">(),&lt;/span> e&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="扩展-abstractmetadatareportfactory">扩展 AbstractMetadataReportFactory&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">class&lt;/span> &lt;span style="color:#268bd2">RedisMetadataReportFactory&lt;/span> &lt;span style="color:#268bd2">extends&lt;/span> AbstractMetadataReportFactory &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">@Override&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">public&lt;/span> MetadataReport &lt;span style="color:#268bd2">createMetadataReport&lt;/span>&lt;span style="color:#719e07">(&lt;/span>URL url&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">return&lt;/span> &lt;span style="color:#719e07">new&lt;/span> RedisMetadataReport&lt;span style="color:#719e07">(&lt;/span>url&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="增加-metadatareportfactory">增加 MetadataReportFactory&lt;/h4>
+&lt;blockquote>
+&lt;p>META-INF/dubbo/internal/org.apache.dubbo.metadata.store.MetadataReportFactory&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>redis&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">org.apache.dubbo.metadata.store.redis.RedisMetadataReportFactory&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>只要将上面的修改和project打包成jar包，然后配置元数据中心的url：redis://10.20.153.10:6379。&lt;/p>
+&lt;p>至此，一个自定义的元数据存储就可以运行了。&lt;/p></description></item><item><title>Docs3-V2: 消息派发扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/dispatcher/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/dispatcher/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>通道信息派发器，用于指定线程池模型。&lt;/p>
 &lt;h2 id="扩展接口">扩展接口&lt;/h2>
@@ -1024,7 +1083,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.remoting.Dispatcher：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxDispatcher
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxDispatcher&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 线程池扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/threadpool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/threadpool/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>服务提供方线程池实现策略，当服务器收到一个请求时，需要在线程池中创建一个线程去执行服务提供方业务逻辑。&lt;/p>
@@ -1063,7 +1122,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.common.threadpool.ThreadPool：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxThreadPool
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxThreadPool&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 序列化扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/serialize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/serialize/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>将对象转成字节流，用于网络传输，以及将字节流转为对象，用于在收到字节流数据后还原成对象。&lt;/p>
@@ -1116,7 +1175,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.common.serialize.Serialization：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxSerialization
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxSerialization&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 网络传输扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/remoting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/remoting/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>远程通讯的服务器及客户端传输实现。&lt;/p>
@@ -1211,7 +1270,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.remoting.Transporter：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxTransporter
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxTransporter&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 信息交换扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/exchanger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/exchanger/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>基于传输层之上，实现 Request-Response 信息交换语义。&lt;/p>
@@ -1273,7 +1332,48 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// ...
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.remoting.exchange.Exchanger：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxExchanger
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxExchanger&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 对等网络节点组网器扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/page/</guid><description>
+&lt;h1 id="页面扩展">页面扩展&lt;/h1>
+&lt;h2 id="扩展说明">扩展说明&lt;/h2>
+&lt;p>对等网络节点组网器。&lt;/p>
+&lt;h2 id="扩展接口">扩展接口&lt;/h2>
+&lt;p>&lt;code>org.apache.dubbo.container.page.PageHandler&lt;/code>&lt;/p>
+&lt;h2 id="扩展配置">扩展配置&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:protocol&lt;/span> page=&lt;span style="color:#2aa198">&amp;#34;xxx,yyy&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&amp;lt;!-- 缺省值设置，当&amp;lt;dubbo:protocol&amp;gt;没有配置page属性时，使用此配置 --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:provider&lt;/span> page=&lt;span style="color:#2aa198">&amp;#34;xxx,yyy&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="已知扩展">已知扩展&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>org.apache.dubbo.container.page.pages.HomePageHandler&lt;/code>&lt;/li>
+&lt;li>&lt;code>org.apache.dubbo.container.page.pages.StatusPageHandler&lt;/code>&lt;/li>
+&lt;li>&lt;code>org.apache.dubbo.container.page.pages.LogPageHandler&lt;/code>&lt;/li>
+&lt;li>&lt;code>org.apache.dubbo.container.page.pages.SystemPageHandler&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="扩展示例">扩展示例&lt;/h2>
+&lt;p>Maven 项目结构：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>src
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-main
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-java
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-xxx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-XxxPageHandler.java (实现PageHandler接口)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-resources
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-META-INF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-dubbo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-org.apache.dubbo.container.page.PageHandler (纯文本文件，内容为：xxx=com.xxx.XxxPageHandler)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>XxxPageHandler.java：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">package&lt;/span> com.xxx&lt;span style="color:#719e07">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">import&lt;/span> org.apache.dubbo.container.page.PageHandler&lt;span style="color:#719e07">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">class&lt;/span> &lt;span style="color:#268bd2">XxxPageHandler&lt;/span> &lt;span style="color:#268bd2">implements&lt;/span> PageHandler &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">public&lt;/span> Group &lt;span style="color:#268bd2">lookup&lt;/span>&lt;span style="color:#719e07">(&lt;/span>URL url&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// ...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.container.page.PageHandler：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxPageHandler&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 组网扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/networker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/networker/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>对等网络节点组网器。&lt;/p>
@@ -1311,7 +1411,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.remoting.p2p.Networker：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxNetworker
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxNetworker&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: Telnet 命令扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/telnet-handler/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/telnet-handler/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>所有服务器均支持 telnet 访问，用于人工干预。&lt;/p>
@@ -1360,7 +1460,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.remoting.telnet.TelnetHandler：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxTelnetHandler
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxTelnetHandler&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="用法">用法&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>telnet 127.0.0.1 &lt;span style="color:#2aa198">20880&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dubbo&amp;gt; xxx args
@@ -1406,7 +1506,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.common.status.StatusChecker：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxStatusChecker
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxStatusChecker&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 容器扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/container/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/container/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>服务容器扩展，用于自定义加载内容。&lt;/p>
@@ -1447,7 +1547,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.container.Container：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxContainer
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxContainer&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 缓存扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/cache/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>用请求参数作为 key，缓存返回结果。&lt;/p>
@@ -1504,7 +1604,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.cache.CacheFactory：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxCacheFactory
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxCacheFactory&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 验证扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/validation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/validation/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>参数验证扩展点。&lt;/p>
@@ -1552,7 +1652,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.validation.Validation：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxValidation
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxValidation&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 日志适配扩展</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/logger-adapter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/logger-adapter/</guid><description>
 &lt;h2 id="扩展说明">扩展说明&lt;/h2>
 &lt;p>日志输出适配扩展点。&lt;/p>
@@ -1607,48 +1707,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// ...
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.common.logger.LoggerAdapter：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxLoggerAdapter
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2:</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/page/</guid><description>
-&lt;h1 id="页面扩展">页面扩展&lt;/h1>
-&lt;h2 id="扩展说明">扩展说明&lt;/h2>
-&lt;p>对等网络节点组网器。&lt;/p>
-&lt;h2 id="扩展接口">扩展接口&lt;/h2>
-&lt;p>&lt;code>org.apache.dubbo.container.page.PageHandler&lt;/code>&lt;/p>
-&lt;h2 id="扩展配置">扩展配置&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:protocol&lt;/span> page=&lt;span style="color:#2aa198">&amp;#34;xxx,yyy&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&amp;lt;!-- 缺省值设置，当&amp;lt;dubbo:protocol&amp;gt;没有配置page属性时，使用此配置 --&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:provider&lt;/span> page=&lt;span style="color:#2aa198">&amp;#34;xxx,yyy&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="已知扩展">已知扩展&lt;/h2>
-&lt;ul>
-&lt;li>&lt;code>org.apache.dubbo.container.page.pages.HomePageHandler&lt;/code>&lt;/li>
-&lt;li>&lt;code>org.apache.dubbo.container.page.pages.StatusPageHandler&lt;/code>&lt;/li>
-&lt;li>&lt;code>org.apache.dubbo.container.page.pages.LogPageHandler&lt;/code>&lt;/li>
-&lt;li>&lt;code>org.apache.dubbo.container.page.pages.SystemPageHandler&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h2 id="扩展示例">扩展示例&lt;/h2>
-&lt;p>Maven 项目结构：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>src
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-main
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-java
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-com
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-xxx
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-XxxPageHandler.java (实现PageHandler接口)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-resources
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-META-INF
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-dubbo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> |-org.apache.dubbo.container.page.PageHandler (纯文本文件，内容为：xxx=com.xxx.XxxPageHandler)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>XxxPageHandler.java：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">package&lt;/span> com.xxx&lt;span style="color:#719e07">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">import&lt;/span> org.apache.dubbo.container.page.PageHandler&lt;span style="color:#719e07">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">class&lt;/span> &lt;span style="color:#268bd2">XxxPageHandler&lt;/span> &lt;span style="color:#268bd2">implements&lt;/span> PageHandler &lt;span style="color:#719e07">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">public&lt;/span> Group &lt;span style="color:#268bd2">lookup&lt;/span>&lt;span style="color:#719e07">(&lt;/span>URL url&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// ...
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>META-INF/dubbo/org.apache.dubbo.container.page.PageHandler：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>xxx=com.xxx.XxxPageHandler
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>xxx&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">com.xxx.XxxLoggerAdapter&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 扩展点开发指南</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/dubbo-spi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/reference-manual/spi/description/dubbo-spi/</guid><description>
 &lt;h2 id="1简介">1.简介&lt;/h2>
 &lt;p>SPI 全称为 Service Provider Interface，是一种服务发现机制。SPI 的本质是将接口实现类的全限定名配置在文件中，并由服务加载器读取配置文件，加载实现类。这样可以在运行时，动态为接口替换实现类。正因此特性，我们可以很容易的通过 SPI 机制为我们的程序提供拓展功能。SPI 机制在第三方框架中也有所应用，比如 Dubbo 就是通过 SPI 机制加载所有的组件。不过，Dubbo 并未使用 Java 原生的 SPI 机制，而是对其进行了增强，使其能够更好的满足需求。在 Dubbo 中，SPI 是一个非常重要的模块。基于 SPI，我们可以很容易的对 Dubbo 进行拓展。
@@ -1666,7 +1725,7 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;h3 id="21-加载固定的扩展类">2.1 加载固定的扩展类&lt;/h3>
 &lt;p>Dubbo 中，SPI 加载固定扩展类的入口是 ExtensionLoader 的 getExtension 方法，下面我们对拓展类对象的获取过程进行详细的分析。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> T &lt;span style="color:#268bd2">getExtension&lt;/span>&lt;span style="color:#719e07">(&lt;/span>String name&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>name &lt;span style="color:#719e07">==&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span> &lt;span style="color:#719e07">||&lt;/span> name&lt;span style="color:#719e07">.&lt;/span>length&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">==&lt;/span> 0&lt;span style="color:#719e07">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>name &lt;span style="color:#719e07">==&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span> &lt;span style="color:#719e07">||&lt;/span> name&lt;span style="color:#719e07">.&lt;/span>length&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">==&lt;/span> &lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">throw&lt;/span> &lt;span style="color:#719e07">new&lt;/span> IllegalArgumentException&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;Extension name == null&amp;#34;&lt;/span>&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span>&lt;span style="color:#719e07">.&lt;/span>equals&lt;span style="color:#719e07">(&lt;/span>name&lt;span style="color:#719e07">))&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 获取默认的拓展实现类
@@ -1836,19 +1895,19 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">while&lt;/span> &lt;span style="color:#719e07">((&lt;/span>line &lt;span style="color:#719e07">=&lt;/span> reader&lt;span style="color:#719e07">.&lt;/span>readLine&lt;span style="color:#719e07">())&lt;/span> &lt;span style="color:#719e07">!=&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 定位 # 字符
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#268bd2">final&lt;/span> &lt;span style="color:#dc322f">int&lt;/span> ci &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>indexOf&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#39;#&amp;#39;&lt;/span>&lt;span style="color:#719e07">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ci &lt;span style="color:#719e07">&amp;gt;=&lt;/span> 0&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ci &lt;span style="color:#719e07">&amp;gt;=&lt;/span> &lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 截取 # 之前的字符串，# 之后的内容为注释，需要忽略
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> line &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>substring&lt;span style="color:#719e07">(&lt;/span>0&lt;span style="color:#719e07">,&lt;/span> ci&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> line &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>substring&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">,&lt;/span> ci&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> line &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>trim&lt;span style="color:#719e07">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>line&lt;span style="color:#719e07">.&lt;/span>length&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">&amp;gt;&lt;/span> 0&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>line&lt;span style="color:#719e07">.&lt;/span>length&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">&amp;gt;&lt;/span> &lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">try&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> String name &lt;span style="color:#719e07">=&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span>&lt;span style="color:#719e07">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 以等于号 = 为界，截取键与值
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#dc322f">int&lt;/span> i &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>indexOf&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#39;=&amp;#39;&lt;/span>&lt;span style="color:#719e07">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>i &lt;span style="color:#719e07">&amp;gt;&lt;/span> 0&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>substring&lt;span style="color:#719e07">(&lt;/span>0&lt;span style="color:#719e07">,&lt;/span> i&lt;span style="color:#719e07">).&lt;/span>trim&lt;span style="color:#719e07">();&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> clazz &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>substring&lt;span style="color:#719e07">(&lt;/span>i &lt;span style="color:#719e07">+&lt;/span> 1&lt;span style="color:#719e07">).&lt;/span>trim&lt;span style="color:#719e07">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>i &lt;span style="color:#719e07">&amp;gt;&lt;/span> &lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>substring&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">,&lt;/span> i&lt;span style="color:#719e07">).&lt;/span>trim&lt;span style="color:#719e07">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> clazz &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">.&lt;/span>substring&lt;span style="color:#719e07">(&lt;/span>i &lt;span style="color:#719e07">+&lt;/span> &lt;span style="color:#2aa198">1&lt;/span>&lt;span style="color:#719e07">).&lt;/span>trim&lt;span style="color:#719e07">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span> &lt;span style="color:#719e07">else&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> clazz &lt;span style="color:#719e07">=&lt;/span> line&lt;span style="color:#719e07">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
@@ -1889,7 +1948,7 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>StringUtils&lt;span style="color:#719e07">.&lt;/span>isEmpty&lt;span style="color:#719e07">(&lt;/span>name&lt;span style="color:#719e07">))&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 如果 name 为空，则尝试从 Extension 注解中获取 name，或使用小写的类名作为 name
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> name &lt;span style="color:#719e07">=&lt;/span> findAnnotationName&lt;span style="color:#719e07">(&lt;/span>clazz&lt;span style="color:#719e07">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>name&lt;span style="color:#719e07">.&lt;/span>length&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">==&lt;/span> 0&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>name&lt;span style="color:#719e07">.&lt;/span>length&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">==&lt;/span> &lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">throw&lt;/span> &lt;span style="color:#719e07">new&lt;/span> IllegalStateException&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;No such extension name for the class &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> clazz&lt;span style="color:#719e07">.&lt;/span>getName&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">+&lt;/span> &lt;span style="color:#2aa198">&amp;#34; in the config &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> resourceURL&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
@@ -1898,7 +1957,7 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ArrayUtils&lt;span style="color:#719e07">.&lt;/span>isNotEmpty&lt;span style="color:#719e07">(&lt;/span>names&lt;span style="color:#719e07">))&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 如果类上有 Activate 注解，则使用 names 数组的第一个元素作为键，
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#586e75">// 存储 name 到 Activate 注解对象的映射关系
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> cacheActivateClass&lt;span style="color:#719e07">(&lt;/span>clazz&lt;span style="color:#719e07">,&lt;/span> names&lt;span style="color:#719e07">[&lt;/span>0&lt;span style="color:#719e07">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> cacheActivateClass&lt;span style="color:#719e07">(&lt;/span>clazz&lt;span style="color:#719e07">,&lt;/span> names&lt;span style="color:#719e07">[&lt;/span>&lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">for&lt;/span> &lt;span style="color:#719e07">(&lt;/span>String n &lt;span style="color:#719e07">:&lt;/span> names&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 存储 Class 到名称的映射关系
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> cacheName&lt;span style="color:#719e07">(&lt;/span>clazz&lt;span style="color:#719e07">,&lt;/span> n&lt;span style="color:#719e07">);&lt;/span>
@@ -1932,8 +1991,21 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>method&lt;span style="color:#719e07">.&lt;/span>getAnnotation&lt;span style="color:#719e07">(&lt;/span>DisableInject&lt;span style="color:#719e07">.&lt;/span>class&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">!=&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">continue&lt;/span>&lt;span style="color:#719e07">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"> * 检测是否实现了ScopeModelAware、ExtensionAccessorAware类，如果实现则不注入
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>method&lt;span style="color:#719e07">.&lt;/span>getDeclaringClass&lt;span style="color:#719e07">()&lt;/span> &lt;span style="color:#719e07">==&lt;/span> ScopeModelAware&lt;span style="color:#719e07">.&lt;/span>class&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">continue&lt;/span>&lt;span style="color:#719e07">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>instance &lt;span style="color:#719e07">instanceof&lt;/span> ScopeModelAware &lt;span style="color:#719e07">||&lt;/span> instance &lt;span style="color:#719e07">instanceof&lt;/span> ExtensionAccessorAware&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ignoredInjectMethodsDesc&lt;span style="color:#719e07">.&lt;/span>contains&lt;span style="color:#719e07">(&lt;/span>ReflectUtils&lt;span style="color:#719e07">.&lt;/span>getDesc&lt;span style="color:#719e07">(&lt;/span>method&lt;span style="color:#719e07">)))&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">continue&lt;/span>&lt;span style="color:#719e07">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 基本类型不注入
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> Class&lt;span style="color:#719e07">&amp;lt;?&amp;gt;&lt;/span> pt &lt;span style="color:#719e07">=&lt;/span> method&lt;span style="color:#719e07">.&lt;/span>getParameterTypes&lt;span style="color:#719e07">()[&lt;/span>0&lt;span style="color:#719e07">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> Class&lt;span style="color:#719e07">&amp;lt;?&amp;gt;&lt;/span> pt &lt;span style="color:#719e07">=&lt;/span> method&lt;span style="color:#719e07">.&lt;/span>getParameterTypes&lt;span style="color:#719e07">()[&lt;/span>&lt;span style="color:#2aa198">0&lt;/span>&lt;span style="color:#719e07">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ReflectUtils&lt;span style="color:#719e07">.&lt;/span>isPrimitives&lt;span style="color:#719e07">(&lt;/span>pt&lt;span style="color:#719e07">))&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">continue&lt;/span>&lt;span style="color:#719e07">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
@@ -2077,7 +2149,7 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">private&lt;/span> String &lt;span style="color:#268bd2">generateMethodContent&lt;/span>&lt;span style="color:#719e07">(&lt;/span>Method method&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 该方法上必须有 @Adaptive 注解修饰
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> Adaptive adaptiveAnnotation &lt;span style="color:#719e07">=&lt;/span> method&lt;span style="color:#719e07">.&lt;/span>getAnnotation&lt;span style="color:#719e07">(&lt;/span>Adaptive&lt;span style="color:#719e07">.&lt;/span>class&lt;span style="color:#719e07">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StringBuilder code &lt;span style="color:#719e07">=&lt;/span> &lt;span style="color:#719e07">new&lt;/span> StringBuilder&lt;span style="color:#719e07">(&lt;/span>512&lt;span style="color:#719e07">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StringBuilder code &lt;span style="color:#719e07">=&lt;/span> &lt;span style="color:#719e07">new&lt;/span> StringBuilder&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">512&lt;/span>&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>adaptiveAnnotation &lt;span style="color:#719e07">==&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 没有 @Adaptive 注解修饰，生成异常信息
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">return&lt;/span> generateUnsupported&lt;span style="color:#719e07">(&lt;/span>method&lt;span style="color:#719e07">);&lt;/span>
@@ -2085,7 +2157,7 @@ Dubbo 中，SPI 主要有两种用法，一种是加载固定的扩展类，另�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 获取 URL 在参数列表上的索引
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#dc322f">int&lt;/span> urlTypeIndex &lt;span style="color:#719e07">=&lt;/span> getUrlTypeIndex&lt;span style="color:#719e07">(&lt;/span>method&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>urlTypeIndex &lt;span style="color:#719e07">!=&lt;/span> &lt;span style="color:#719e07">-&lt;/span>1&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>urlTypeIndex &lt;span style="color:#719e07">!=&lt;/span> &lt;span style="color:#719e07">-&lt;/span>&lt;span style="color:#2aa198">1&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// 如果参数列表上存在 URL，生成对 URL 进行空检查
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> code&lt;span style="color:#719e07">.&lt;/span>append&lt;span style="color:#719e07">(&lt;/span>generateUrlNullCheck&lt;span style="color:#719e07">(&lt;/span>urlTypeIndex&lt;span style="color:#719e07">));&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span> &lt;span style="color:#719e07">else&lt;/span> &lt;span style="color:#719e07">{&lt;/span>

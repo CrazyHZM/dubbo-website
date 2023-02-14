@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 应用级服务发现</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/</link><description>Recent content in 应用级服务发现 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 应用级服务发现迁移示例</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/service-discovery-samples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/service-discovery-samples/</guid><description>
 &lt;p>应用级服务发现为应用间服务发现的协议，因此使用应用级服务发现需要消费端和服务端均升级到 Dubbo 3.0 版本并开启新特性（默认开启）才能在链路中使用应用级服务发现，真正发挥应用级服务发现的优点。&lt;/p>
 &lt;h2 id="开启方式">开启方式&lt;/h2>
-&lt;h2 id="服务端">服务端&lt;/h2>
+&lt;h3 id="服务端">服务端&lt;/h3>
 &lt;p>应用升级到 Dubbo 3.0 后，服务端自动开启接口级 + 应用级双注册功能，默认无需开发者修改任何配置&lt;/p>
 &lt;h3 id="消费端">消费端&lt;/h3>
 &lt;p>应用升级到 Dubbo 3.0 后，消费端自动始接口级 + 应用级双订阅功能，默认无需开发者修改任何配置。建议在服务端都升级到 Dubbo 3.0 并开启应用级注册以后通过规则配置消费端关闭接口级订阅，释放对应的内存空间。&lt;/p>
@@ -58,7 +58,8 @@ FORCE_APPLICATION：仅应用级订阅，将只采用全新的服务发现模型
 &lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>step: FORCE_INTERFACE
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 接口级服务发现迁移至应用级服务发现指南</title><link>https://dubbo.apache.org/zh/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/migration-service-discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/migration-service-discovery/</guid><description>
-&lt;p>&lt;strong>总体上来说，在地址注册与发现环节，3.x 是完全兼容 2.x 版本的，这意味着，用户可以选择将集群内任意数量的应用或机器升级到 3.x，同时在这个过程中保持与 2.x 版本的互操作性。&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>总体上来说，在地址注册与发现环节，3.x 是完全兼容 2.x 版本的，这意味着，用户可以选择将集群内任意数量的应用或机器升级到 3.x，同时在这个过程中保持与 2.x 版本的互操作性。&lt;/strong>
+如关心迁移背后工作原理，请参考 &lt;a href="../service-discovery-rule">迁移规则详情与工作原理&lt;/a>&lt;/p>
 &lt;h2 id="1-快速升级步骤">1 快速升级步骤&lt;/h2>
 &lt;p>简单的修改 pom.xml 到最新版本就可以完成升级，如果要迁移到应用级地址，只需要调整开关控制 3.x 版本的默认行为。&lt;/p>
 &lt;ol>
@@ -125,7 +126,7 @@ FORCE_APPLICATION：仅应用级订阅，将只采用全新的服务发现模型
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#268bd2">serviceKey&lt;/span>: org.apache.dubbo.config.api.DemoService:1.0.0
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">step&lt;/span>: FORCE_INTERFACE
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用这种方式能做到比较精细迁移控制，但是当下及后续的改造成本会比较高，除了一些特别场景，我们不太推荐启用这种配置方式。
-(&lt;a href="../../advanced/migration-invoker/">迁移指南&lt;/a>) &lt;strong>官方推荐使用的全局的开关式的迁移策略，让消费端实例在启动阶段自行决策使用哪份可用的地址列表。&lt;/strong>&lt;/p>
+(&lt;a href="../service-discovery-rule/">迁移指南&lt;/a>) &lt;strong>官方推荐使用的全局的开关式的迁移策略，让消费端实例在启动阶段自行决策使用哪份可用的地址列表。&lt;/strong>&lt;/p>
 &lt;h2 id="4-迁移状态的收敛">4 迁移状态的收敛&lt;/h2>
 &lt;p>为了同时兼容 2.x 版本，升级到 3.x 版本的应用在一段时间内要么处在双注册状态，要么处在双订阅状态。&lt;/p>
 &lt;p>解决这个问题，我们还是从 Provider 视角来看，当所有的 Provider 都切换到应用级地址注册之后，也就不存在双订阅的问题了。&lt;/p>
@@ -256,7 +257,7 @@ FORCE_APPLICATION：只启用新模式下应用级服务发现的注册中心逻
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span>&lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>currentAvailableInvoker &lt;span style="color:#719e07">!=&lt;/span> &lt;span style="color:#cb4b16">null&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>step &lt;span style="color:#719e07">==&lt;/span> APPLICATION_FIRST&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// call ratio calculation based on random value
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ThreadLocalRandom&lt;span style="color:#719e07">.&lt;/span>current&lt;span style="color:#719e07">().&lt;/span>nextDouble&lt;span style="color:#719e07">(&lt;/span>100&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">&amp;gt;&lt;/span> promotion&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> &lt;span style="color:#719e07">if&lt;/span> &lt;span style="color:#719e07">(&lt;/span>ThreadLocalRandom&lt;span style="color:#719e07">.&lt;/span>current&lt;span style="color:#719e07">().&lt;/span>nextDouble&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">100&lt;/span>&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">&amp;gt;&lt;/span> promotion&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">return&lt;/span> invoker&lt;span style="color:#719e07">.&lt;/span>invoke&lt;span style="color:#719e07">(&lt;/span>invocation&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
